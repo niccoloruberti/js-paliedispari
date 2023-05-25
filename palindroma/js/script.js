@@ -1,4 +1,4 @@
-'use stric';
+'use strict';
 
 //chiedo all'utente di inserire una parola
 let parolaUtente = prompt('inerisci una parola');
@@ -13,15 +13,15 @@ function palindroma(word) {
     let wordReverse = lettersReverse.join('');
     //controllo se la parola è palindroma
     if (word === wordReverse) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 
 //mostro a schermo un alert che mi dice se la parola è palindroma o meno
 if (palindroma(parolaUtente)) {
-    alert(`${parolaUtente} è palindroma`)
+    alert(`${parolaUtente} è palindroma`);
 } else {
-    alert(`${parolaUtente} non è palindroma`) 
+    alert(`${parolaUtente} non è palindroma`);
 }
